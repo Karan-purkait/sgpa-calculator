@@ -14,7 +14,7 @@ export default function Home() { // Renamed from SgpaCalculator to Home
 
   const calculate = () => {
     // Basic validation for input
-    if (semesters === 0 || sgpas.some(isNaN) || sgpas.length !== semesters) {
+    if (semesters === 0 ||semesters === 9 || sgpas.some(isNaN) || sgpas.length !== semesters) {
       // Using a simple alert for now, consider a custom modal for better UX
       alert("Please enter valid SGPA for all semesters."); 
       return;
@@ -25,7 +25,7 @@ export default function Home() { // Renamed from SgpaCalculator to Home
     setAverageSgpa(avgSgpa.toFixed(2));
 
     // Common formula for percentage from SGPA (adjust if your institution uses a different one)
-    const calculatedPercentage = (avgSgpa - 0.75) * 10;
+    const calculatedPercentage = (avgSgpa * 9.25);
     setPercentage(calculatedPercentage.toFixed(2));
   };
 
