@@ -33,7 +33,7 @@ export default function Contact() {
           Got a brilliant idea to make this calculator even better? Found a bug that's defying the laws of physics? Or just want to say hi? We'd love to hear from you!
           <br /><br />
           Feel free to email us at: <br />
-          <strong className="text-blue-600 font-extrabold text-xl break-all">support@sgpacalc.com</strong>
+          <strong className="text-blue-600 font-extrabold text-xl break-all">support@yoursenior.com</strong>
         </p>
       </div>
     </div>

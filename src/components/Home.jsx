@@ -14,7 +14,7 @@ export default function Home() { // Renamed from SgpaCalculator to Home
 
   const calculate = () => {
     // Basic validation for input
-    if (semesters === 0 ||semesters === 9 || sgpas.some(isNaN) || sgpas.length !== semesters) {
+    if (semesters === 0 || sgpas.some(isNaN) || sgpas.length !== semesters) {
       // Using a simple alert for now, consider a custom modal for better UX
       alert("Please enter valid SGPA for all semesters."); 
       return;
@@ -45,11 +45,15 @@ export default function Home() { // Renamed from SgpaCalculator to Home
           id="totalSemesters"
           type="number"
           min="0"
+          // Added max attribute to limit input to 8
+          max="8" 
           className="border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg p-3 w-full outline-none transition-all duration-200"
           onChange={(e) => {
             const num = parseInt(e.target.value);
-            setSemesters(num > 0 ? num : 0); // Ensure number is not negative
-            setSgpas(Array(num > 0 ? num : 0).fill(0));
+            // Ensure number is between 0 and 8 (inclusive)
+            const clampedNum = Math.min(8, Math.max(0, num)); 
+            setSemesters(clampedNum);
+            setSgpas(Array(clampedNum).fill(0));
             setAverageSgpa(null); // Reset results
             setPercentage(null); // Reset results
           }}
@@ -67,7 +71,7 @@ export default function Home() { // Renamed from SgpaCalculator to Home
             type="number"
             step="0.01"
             min="0"
-            max="10"
+            max="8"
             className="border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg p-3 w-full outline-none transition-all duration-200"
             onChange={(e) => handleInputChange(i, e.target.value)}
             placeholder="e.g., 8.50"

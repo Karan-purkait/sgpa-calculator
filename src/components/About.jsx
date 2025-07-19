@@ -6,10 +6,10 @@ export default function About() {
       {/* Left Side: About This Project */}
       <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md transform transition-all duration-300 hover:scale-105 mb-8 md:mb-0 md:mr-8">
         <h1 className="text-3xl font-extrabold text-center text-gray-800 mb-6">
-          About This Project
+          About
         </h1>
         <p className="text-gray-700 text-lg text-center leading-relaxed">
-          This is a simple **SGPA and percentage calculator** built with the **MERN stack** and **Vite**. It's designed to help students easily compute their academic performance with a clean and intuitive interface. Because let's be real, you've got enough complex equations to solve already.
+         Welcome to your fantastic academic companion! This web application is meticulously designed to help students effortlessly calculate their SGPA, Percentage, and even CGPA. We believe in making complex calculations intuitive and enjoyable, so you can focus on mastering your studies, not wrestling with formulas.
         </p>
       </div>
 

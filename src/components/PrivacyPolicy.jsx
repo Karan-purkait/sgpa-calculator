@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
         <p className="text-gray-700 text-lg text-center leading-relaxed">
           We get it – privacy matters, especially when you're dealing with sensitive academic data. Here's our straightforward promise:
           <br /><br />
-          This calculator operates entirely on your device. We **do not store, collect, or share** any of your personal academic data, including your SGPA, percentages, or grades. Your input stays right where it belongs: with you.
+          This calculator operates entirely on your device. We do not store, collect, or share any of your personal academic data, including your SGPA, percentages, or grades. Your input stays right where it belongs: with you.
           <br /><br />
           Think of us as a super-smart local spreadsheet that just happens to look really good. Your data is yours and yours alone!
         </p>
