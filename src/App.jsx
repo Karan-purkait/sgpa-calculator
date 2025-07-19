@@ -20,7 +20,7 @@ export default function App() {
     <div className="bg-gradient-to-br from-blue-100 to-purple-200 min-h-screen">
       {/* Navbar - now sticky at the top for easy navigation */}
       <nav className="bg-white p-4 shadow-md flex items-center justify-between sticky top-0 z-50">
-        <div className="font-extrabold text-2xl text-blue-700">SGPA Calc</div>
+        <div className="font-extrabold text-2xl text-blue-700">CGPA Calculator</div>
         
         {/* Scrollable navigation links container */}
         <div className="flex-grow overflow-x-auto whitespace-nowrap scrollbar-hide md:flex md:justify-end md:gap-6">
