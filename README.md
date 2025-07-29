@@ -25,7 +25,7 @@ A simple and responsive web application built using **React.js** that helps coll
 
 ## 📸 Demo
 
-You can [view the live demo](https://your-deployment-link.vercel.app) (replace with your deployment link)  
+You can [view the live demo][((https://uitcgpa-calculator.vercel.app/)] 
 or run it locally following the steps below.
 
 ## 🔧 Installation
