@@ -2,7 +2,8 @@
 
 A simple and responsive web application built using **React.js** that helps college students calculate their **Semester Grade Point Average (SGPA)** with ease. Just enter your subjects and grades – the app does the rest!
 
-![College SGPA Calculator Screenshot](screenshot.png)
+<img width="917" height="905" alt="image" src="https://github.com/user-attachments/assets/01b43078-703d-480d-acfa-ec83be7a03db" />
+
 
 ## 🚀 Features
 
@@ -15,10 +16,12 @@ A simple and responsive web application built using **React.js** that helps coll
 
 ## 🛠️ Tech Stack
 
-- [React.js](https://reactjs.org/)
+- React js
+- Tailwind CSS
+- SEO
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- JavaScript 
 
 ## 📸 Demo
 
@@ -35,7 +38,7 @@ git clone https://github.com/your-username/sgpa-calculator.git
 cd sgpa-calculator
 
 # Install dependencies
-npm install
+pnpm install
 
 # Start the development server
-npm start
+pnpm start
